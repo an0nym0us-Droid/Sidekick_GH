@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sidekick_offline_try2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+		<uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MainActivitySpinner" >
+        <activity android:name="com.example.sidekick_offline_try2.MainActivity" android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SplashScreen"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="WalkthroughActivity"
+            android:theme="@style/SetupCheckBoxTheme"></activity>
+        
+         
+        
+        <activity android:name="EditActivity"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="RecommendationPage"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        
+        
+        <activity android:name="FinEditCat"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar"></activity>
+        
+        <activity android:name="EditChannelActivity"
+            android:theme="@style/CheckBoxTheme"></activity>
+        
+        <activity android:name="Settings"
+            android:theme="@style/CheckBoxTheme"></activity>
+        
+        <activity android:name="RemRecWatch"
+            android:theme="@style/Theme.Personal_corner"></activity>
+        
+         <activity android:name="SetupWizard"
+            android:theme="@style/SetupCheckBoxTheme"></activity>
+         
+         <activity android:name="SetupwizardSecond"
+            android:theme="@style/SetupCheckBoxTheme"></activity>
+        
+        <activity android:name="DetailsPage"
+            android:theme="@style/CheckBoxTheme"></activity>
+        
+        <service android:name=".ScheduleService" />
+        <service android:name=".NotifyService" />
+         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+         <activity android:name="com.facebook.LoginActivity"
+             android:theme="@android:style/Theme.NoTitleBar"></activity>
+         
+          <receiver android:name="NotificationReminder"></receiver>
+          
+    </application>
+
+    
+ 
+    <!-- Network State Permissions -->
+    
+    
+ 
+</manifest>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+   
+ 	<FrameLayout android:layout_height="match_parent"
+ 	    android:layout_width="match_parent">
+ 	    <ListView
+        		    android:id="@+id/watchlv"
+        		    android:layout_width="match_parent"
+        		    android:layout_height="match_parent" 
+        		    android:animateLayoutChanges="true"
+        		   android:cacheColorHint="#00000000"
+        		   android:divider="#f0b547"
+        		   android:dividerHeight="3dp">
+        		</ListView>
+        		
+    <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/noWatch"
+            android:visibility="gone"
+            android:text="No items added to Watchlist."
+            android:layout_gravity="center"/>
+ 	    
+ 	</FrameLayout>
+    
+ 
+</RelativeLayout>

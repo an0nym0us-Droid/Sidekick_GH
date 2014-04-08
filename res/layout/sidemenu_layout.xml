@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.sidekick_offline_try2"
+           android:id="@+id/menuPanel"
+           android:layout_height="match_parent"
+           android:layout_width="wrap_content"
+           android:gravity="right"
+           android:orientation="vertical"
+           android:background="@drawable/menuback">
+        		
+        		<RelativeLayout 
+        		    android:id="@+id/menuHeader"
+        		    android:layout_width="match_parent"
+        		    android:layout_height="48dp">
+        			
+        		    <TextView android:id="@+id/sidemenu_layout_personalCorner"
+        		        android:layout_height="match_parent"
+        		        android:layout_width="wrap_content"
+        		        android:text="PERSONAL CORNER"
+        		        android:gravity="center_vertical"
+        		        android:textColor="#ED9A00"
+        		        android:paddingStart="10dp"
+        		        android:textStyle="bold"
+        		        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        		    
+        		     <ImageButton 
+                 			android:id="@+id/settings"
+                		 	android:layout_width="64dp"
+               			  	android:layout_height="48dp"
+                		 	android:text="Settings"
+                			android:src="@drawable/ic_menu_settings_holo_dark"
+               		  		android:layout_alignParentRight="true"
+               		  		android:background="@drawable/buttpressed" />
+        		     
+        		</RelativeLayout>
+          
+            
+             <View
+		        android:layout_width="fill_parent"
+		        android:layout_height="3dp"
+		        android:background="#A0F7D393" />
+             
+
+            
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal" 
+                android:weightSum="3">
+                
+     		    <FrameLayout
+     		        android:layout_width="0dp"
+     		        android:layout_height="wrap_content"
+     		        android:orientation="vertical"
+     		        android:layout_weight="1"
+     		        android:background="@drawable/buttpressed" >
+                		<ImageButton
+                   				 	android:id="@+id/reminderButton"
+                    				android:layout_width="fill_parent"
+                    				android:src="@drawable/ic_reminder"
+                  					android:background="@drawable/buttpressed"
+                    				android:layout_gravity="center_horizontal"
+                    				android:layout_height="wrap_content"
+                    				android:paddingBottom="15dp"
+                    				android:onClick="rem"/>
+                		
+                		<TextView   android:text="Reminder"
+                    				android:layout_width="match_parent" 
+                    				android:layout_height="wrap_content"
+			                  		android:textColor="#ED9A00"
+			                  		android:layout_gravity="bottom"
+			                  		android:gravity="center_horizontal"
+			                  		android:background="#44FFFFFF"
+			                  		android:textStyle="bold"
+			                		android:textAppearance="?android:attr/textAppearanceSmall" />
+               </FrameLayout>
+               
+     		 <FrameLayout
+     		        android:layout_width="0dp"
+     		        android:layout_height="wrap_content"
+     		        android:orientation="vertical"
+     		        android:layout_weight="1"
+     		        android:background="@drawable/buttpressed" >
+     		        
+                		<ImageButton
+                   				 	android:id="@+id/recomendButton"
+                    				android:layout_width="fill_parent"
+                    				android:src="@drawable/ic_recommend"
+                  					android:background="@drawable/buttpressed"
+                    				android:layout_gravity="center_horizontal"
+                    				android:layout_height="wrap_content"
+                    				android:paddingBottom="15dp"
+                    				android:onClick="rec"/>
+                		
+                		<TextView   android:text="Recommend"
+                    				android:layout_width="match_parent" 
+                    				android:layout_height="wrap_content"
+			                  		android:textColor="#ED9A00"
+			                  		android:layout_gravity="bottom"
+			                  		android:gravity="center_horizontal"
+			                  		android:background="#44FFFFFF"
+			                  		android:textStyle="bold"
+			                		android:textAppearance="?android:attr/textAppearanceSmall" />
+              </FrameLayout>
+              
+     		    <FrameLayout
+     		        android:layout_width="0dp"
+     		        android:layout_height="wrap_content"
+     		        android:orientation="vertical"
+     		        android:layout_weight="1"
+     		        android:background="@drawable/buttpressed" >
+                		<ImageButton
+                   				 	android:id="@+id/watchButton"
+                    				android:layout_width="fill_parent"
+                    				android:src="@drawable/ic_watchlist"
+                  					android:background="@drawable/buttpressed"
+                    				android:layout_gravity="center_horizontal"
+                    				android:layout_height="wrap_content"
+                    				android:paddingBottom="15dp"
+                    				android:onClick="watch"/>
+                		
+                		<TextView   android:text="Watchlist"
+                    				android:layout_width="match_parent" 
+                    				android:layout_height="wrap_content"
+			                  		android:textColor="#ED9A00"
+			                  		android:layout_gravity="bottom"
+			                  		android:gravity="center_horizontal"
+			                  		android:background="#44FFFFFF"
+			                  		android:textStyle="bold"
+			                		android:textAppearance="?android:attr/textAppearanceSmall" />
+              </FrameLayout>
+		</LinearLayout>                
+                
+            <RelativeLayout 
+        		    android:id="@+id/menuCategories"
+        		    android:layout_width="match_parent"
+        		    android:layout_height="48dp">
+        			
+        		    <TextView android:id="@+id/sidemenu_layout_categories"
+        		        android:layout_height="match_parent"
+        		        android:layout_width="wrap_content"
+        		        android:text="CATEGORIES"
+        		        android:gravity="center_vertical"
+        		        android:textColor="#ED9A00"
+        		        android:paddingStart="10dp"
+        		        android:textStyle="bold"
+        		        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        		    
+        		     <ImageButton 
+                 			android:id="@+id/sidemenu_layout_editCategories"
+                		 	android:layout_width="64dp"
+               			  	android:layout_height="48dp"
+                		 	android:text="Settings"
+                			android:src="@drawable/ic_action_edit"
+               		  		android:layout_alignParentRight="true"
+               		  		android:onClick="startEditActivity"
+               		  		android:background="@drawable/buttpressed" />
+        		     
+        		</RelativeLayout>
+          
+            <View
+		        android:layout_width="fill_parent"
+		        android:layout_height="3dp"
+		        android:background="#A0F7D393" />    
+            <ListView
+       			android:id="@+id/sidemenu_layout_catlist"
+      			android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:drawSelectorOnTop="false"
+        		android:fastScrollEnabled="false"
+        		android:divider="#A0ED9A00"
+        		android:listSelector="@drawable/listpressed"
+        		android:dividerHeight="1dp"
+        		android:cacheColorHint="#00000000"
+        		/>
+  </LinearLayout>
+  

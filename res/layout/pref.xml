@@ -1,0 +1,247 @@
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#353535" >
+    <LinearLayout 
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:orientation="vertical" 
+	   android:paddingLeft="5dp"
+	   android:paddingTop="5dp"
+	   android:paddingBottom="5dp"
+	   android:paddingRight="5dp"
+	   android:background="#353535">
+        <!-- 1st Setting  -->
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT INFORMATION"
+        android:textColor="#ED9A00"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <View android:layout_width="fill_parent"
+ 	    android:layout_height="1dp"
+ 	    android:background="#A0F7D393" />
+    <View android:layout_width="fill_parent"
+ 	    android:layout_height="5dp" />
+    	    	    <!-- 1st Setting  CONTENT-->
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+   <com.facebook.widget.ProfilePictureView
+            android:id="@+id/selection_profile_pic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            facebook:preset_size="normal"
+            android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+ </LinearLayout>
+ <View android:layout_width="fill_parent"
+ 	    android:layout_height="5dp" />
+<View android:layout_width="fill_parent"
+ 	    android:layout_height="2dp" 
+ 	    android:id="@+id/fbdiv"
+ 	    android:visibility="gone"
+ 	    android:background="@android:color/darker_gray"/>
+
+
+ 	<View android:layout_width="fill_parent"
+ 	    android:layout_height="15dp" />
+ 	
+ 	<CheckBox
+    android:id="@+id/share"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/white"
+    android:text="Publish Permission"
+    android:visibility="gone" />
+ 	
+ 	<View android:layout_width="fill_parent"
+ 	    android:layout_height="10dp" />
+ 	
+    <com.facebook.widget.LoginButton
+        android:id="@+id/authButtonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+         />
+    <View android:layout_width="fill_parent"
+ 	    android:layout_height="10dp" />
+    <!-- 2nd Setting  -->
+   
+    
+        <!-- 3rd Setting  -->
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DTH CHOICE"
+        android:textColor="#ED9A00"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <View android:layout_width="fill_parent"
+ 	    android:layout_height="1dp"
+ 	    android:background="#A0F7D393"/>
+    <View android:layout_width="fill_parent"
+ 	    android:layout_height="5dp" />
+    
+   			<!-- 3rd Setting Content -->
+    		<LinearLayout android:layout_width="match_parent"
+    		    			android:layout_height="wrap_content"
+    		    			android:orientation="horizontal"
+    		    			android:weightSum="1.0">
+    		    <TextView android:layout_width="0dp"
+       				   android:layout_height="wrap_content"
+        			   android:text="Provider : "
+        			   android:layout_weight="0.4"
+        			   android:textColor="#ED9A00"
+        			   android:textAppearance="?android:attr/textAppearanceMedium"/>
+    		    <TextView android:layout_width="0dp"
+       				   android:layout_height="wrap_content"
+       				   android:id="@+id/providerTV"
+        			   android:text="Provider Here"
+        			   android:textColor="#ED9A00"
+        			   android:layout_weight="0.6"
+        			   android:textAppearance="?android:attr/textAppearanceMedium"/>
+    		</LinearLayout>
+    		<View android:layout_width="fill_parent"
+ 	   				 android:layout_height="3dp" />
+    		<LinearLayout android:layout_width="match_parent"
+    		    			android:layout_height="wrap_content"
+    		    			android:orientation="horizontal"
+    		    			android:weightSum="1.0">
+    		    <TextView android:layout_width="0dp"
+       				   android:layout_height="wrap_content"
+        			   android:text="Base Pack : "
+        			   android:layout_weight="0.4"
+        			   android:textColor="#ED9A00"
+        			   android:textAppearance="?android:attr/textAppearanceMedium"/>
+    		    <TextView android:layout_width="0dp"
+       				   android:layout_height="wrap_content"
+       				   android:id="@+id/baseTV"
+        			   android:text="Base Pack Here"
+        			   android:textColor="#ED9A00"
+        			   android:layout_weight="0.6"
+        			   android:textAppearance="?android:attr/textAppearanceMedium"/>
+    		</LinearLayout>
+    		<View android:layout_width="fill_parent"
+ 	   				 android:layout_height="3dp" />
+    		<LinearLayout android:layout_width="match_parent"
+    		    			android:layout_height="wrap_content"
+    		    			android:orientation="horizontal"
+    		    			android:weightSum="1.0">
+    		    <TextView android:layout_width="0dp"
+       				   android:layout_height="wrap_content"
+        			   android:text="Addons : "
+        			   android:layout_weight="0.4"
+        			   android:textColor="#ED9A00"
+        			   android:textAppearance="?android:attr/textAppearanceMedium"/>
+    		    <TextView android:layout_width="0dp"
+       				   android:layout_height="wrap_content"
+       				   android:id="@+id/addonsTV"
+        			   android:text="Addons Here"
+        			   android:textColor="#ED9A00"
+        			   android:layout_weight="0.6"
+        			   android:textAppearance="?android:attr/textAppearanceMedium"/>
+    		</LinearLayout>
+
+    		<View android:layout_width="match_parent"
+    		    android:layout_height="9dp" />
+    		<Button
+    		    android:id="@+id/button1"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:textColor="#ED9A00"
+    		    android:text="Edit your profile"
+    		    android:onClick="editProfile" />
+            
+    		<Spinner	
+    		    android:layout_width="match_parent"
+    		    android:layout_height="48dp"
+    		    android:visibility="gone"
+    		    style="@style/Widget.Sherlock.Spinner.DropDown.ActionBar"
+    		    android:id="@+id/dthchooser"/>
+    		
+    		
+        <!-- 4th Setting  -->
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIDEKICK"
+        android:textColor="#ED9A00"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <View android:layout_width="fill_parent"
+ 	    android:layout_height="1dp"
+ 	    android:background="#A0F7D393"/>
+    <View android:layout_width="fill_parent"
+ 	    android:layout_height="5dp" />
+     			<!-- 4th Setting Content -->
+     			<TextView  
+		    android:id="@+id/feedback"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+                        android:background="@drawable/back"
+            
+            android:clickable="true"
+            android:onClick="sidekickSettings"
+            android:text="Feedback"
+           />
+     			  <View android:layout_width="fill_parent"
+				 	    android:layout_height="1dp"
+				 	    android:paddingLeft="8dp"
+				 	    android:paddingRight="8dp"
+				 	    android:background="#A0F7D393"/>
+     			<TextView  
+		    android:id="@+id/rateapp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Rate the app"
+                        android:background="@drawable/back"
+            
+            android:clickable="true"
+            android:onClick="sidekickSettings"
+            android:gravity="center_vertical"
+           />
+     			<View android:layout_width="fill_parent"
+				 	    android:layout_height="1dp"
+				 	    android:paddingLeft="8dp"
+				 	    android:paddingRight="8dp"
+				 	    android:background="#A0F7D393"/>
+     			<TextView  
+		    android:id="@+id/about"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:onClick="sidekickSettings"
+            android:text="About us"
+            android:gravity="center_vertical"/>
+     	
+   
+
+	</LinearLayout>
+	</ScrollView>

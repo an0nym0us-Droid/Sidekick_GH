@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.sidekick_offline_try2"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    android:animateLayoutChanges="true"
+    android:layout_weight="1" >
+
+
+  
+     <!-- Main Content Panel -->     
+ 	 <LinearLayout
+                android:id="@+id/maincontentPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:background="@android:color/white" >
+        
+<!--  	     			<LinearLayout -->
+<!-- 					android:id="@+id/header" -->
+<!-- 		            android:layout_width="match_parent" -->
+<!-- 		            android:layout_height="wrap_content" -->
+<!-- 		            android:orientation="vertical"  -->
+<!-- 		           > -->
+        		
+<!-- 					<RelativeLayout -->
+<!-- 		            android:layout_width="match_parent" -->
+<!-- 		            android:layout_height="48dp" -->
+<!-- 		            android:orientation="horizontal"  -->
+<!-- 		            android:background="@drawable/headerbg" -->
+<!-- 		            > -->
+		             
+<!-- 					<ImageButton -->
+<!--         					android:id="@+id/logosid" -->
+<!--        						android:layout_width="wrap_content" -->
+<!--         					android:layout_height="fill_parent" -->
+<!--         					android:layout_gravity="bottom" -->
+<!--         					android:layout_alignParentLeft="true" -->
+<!--         					android:layout_centerVertical="true" -->
+<!--         					android:src="@drawable/logo" -->
+<!--         					android:paddingRight="7dp" -->
+<!--         					android:background="@drawable/buttpressed" -->
+<!--         					 /> -->
+<!-- 					<View -->
+<!-- 					    	 android:id="@+id/dividerVertical" -->
+<!--            					 android:layout_width="1dp" -->
+<!--            					 android:layout_height="30dp" -->
+          					 
+<!--             				 android:layout_toRightOf="@id/logosid" -->
+<!--             				 android:background="@drawable/verticaldivider" -->
+<!--          				     android:layout_marginTop="9dp" -->
+<!--            					 android:layout_alignParentTop="true"/> -->
+					
+<!-- 				    <TextView -->
+<!-- 			                android:id="@+id/catselect" -->
+<!-- 			                android:layout_width="wrap_content" -->
+<!-- 			                android:layout_height="wrap_content" -->
+<!-- 			                android:layout_toRightOf="@id/dividerVertical" -->
+<!-- 			                android:layout_centerInParent="true" -->
+<!-- 			                android:text="All Channels" -->
+<!-- 			                android:textColor="#FFFFFF" -->
+<!-- 			                android:layout_marginLeft="8dp" -->
+<!-- 			                android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!-- 			               /> -->
+				    
+				    
+<!--         		        <Spinner -->
+<!--         				android:id="@+id/spinner" -->
+<!--         				android:layout_width="90dp" -->
+<!--         				android:layout_height="wrap_content" -->
+<!--         				android:layout_alignParentTop="true" -->
+<!--         				android:text="Large Text" -->
+<!--         				android:layout_alignParentRight="true" -->
+<!--         				android:layout_marginRight="5dp" -->
+<!--         				android:background="@drawable/spbg" /> -->
+<!--         		        <TextView  -->
+<!--         		            	android:id="@+id/timeViewer" -->
+<!--         		            	android:layout_width="wrap_content" -->
+<!--         		            	android:layout_height="wrap_content" -->
+<!--         		            	android:layout_below="@id/spinner" -->
+<!--         		            	android:layout_alignLeft="@id/spinner" /> -->
+<!--   				</RelativeLayout> -->
+  				
+  				
+<!--  	     		</LinearLayout> -->
+    					<View
+				     		android:id="@+id/dividerHeaderBottom"
+				    	 	android:layout_width="fill_parent"
+				     		android:layout_height="1dp"
+				     		android:background="#414141"/>
+    					
+        				
+        		
+        		<com.example.sidekick_offline_try2.SliderContainer
+    				android:id="@+id/dateSliderContainer"
+    				android:layout_width="fill_parent"
+    				android:layout_height="wrap_content">
+
+    				
+    
+    					<!--  <ImageView
+        					android:id="@+id/garr"
+        					android:layout_width="wrap_content"
+       						android:layout_height="wrap_content"
+        					android:src="@drawable/grarrow" />-->
+    				
+    				
+    				<com.example.sidekick_offline_try2.ScrollLayout
+        				style="@style/Scroller"
+        				app:labelerClass="com.googlecode.android.widgets.DateSlider.labeler.HourLabeler"
+        				app:labelerFormat="%tl %tp"    >
+    				</com.example.sidekick_offline_try2.ScrollLayout>
+    				
+    				<!--  <TextView
+        				android:id="@+id/timeViewer"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:text="Large Text"
+        				android:textColor="@android:color/white"
+       				 	android:textAppearance="?android:attr/textAppearanceSmall" />-->
+    				
+				</com.example.sidekick_offline_try2.SliderContainer>
+				<View
+				     		android:id="@+id/dividerHeaderBottom1"
+				    	 	android:layout_width="fill_parent"
+				     		android:layout_height="1dp"
+				     		android:background="#414141"/>
+				
+        		<ExpandableListView
+        		    android:id="@+id/lv1"
+        		    android:layout_width="match_parent"
+        		    android:layout_height="match_parent" 
+        		    android:animateLayoutChanges="true"
+        		    android:groupIndicator="@null"
+        		    android:childDivider="#FFF0F0F0"
+        		    android:visibility="gone"
+        		   	android:cacheColorHint="#00000000"
+        		   	android:divider="#f0b547"
+        		   	android:dividerHeight="1dp">
+        		</ExpandableListView>
+
+        		<FrameLayout android:layout_width="wrap_content"
+        		    android:layout_height="match_parent"
+        		    android:id="@+id/listingFrameLayout"
+        		    android:layout_gravity="center"
+        		    android:gravity="center"
+        		    android:orientation="vertical">
+		        		<LinearLayout android:layout_width="wrap_content"
+		        		    android:layout_height="match_parent"
+		        		    android:id="@+id/listingLoading"
+		        		    android:layout_gravity="center"
+		        		    android:gravity="center"
+		        		    android:orientation="vertical">
+					        		<TextView
+					        		    android:id="@+id/ListingLoadingTV"
+					        		    android:layout_width="wrap_content"
+					        		    android:layout_height="wrap_content"
+					        		    android:textColor="#000000"
+					        		    android:text="Loading ..."
+					        		    android:textAppearance="?android:attr/textAppearanceMedium" />
+					        		<ProgressBar
+					        		    android:id="@+id/listingProgressBar"
+					        		    style="?android:attr/progressBarStyleLarge"
+					        		    android:layout_width="wrap_content"
+					        		    android:layout_height="wrap_content" />
+				       </LinearLayout>
+				       <ImageView android:layout_width="300dp"
+				           android:id="@+id/listingFailed"
+				           android:src="@drawable/noconnection"
+				           android:layout_gravity="center"
+				           android:onClick="retryLoading"
+				           android:layout_height="300dp"/>
+		       </FrameLayout>
+		</LinearLayout> 
+   
+             
+</FrameLayout>
+
+<!--    <com.googlecode.android.widgets.DateSlider.ScrollLayout
+        style="@style/Scroller"
+        app:labelerClass="com.googlecode.android.widgets.DateSlider.labeler.MinuteLabeler"
+        app:labelerFormat="%tM"
+        app:childWidth="45dp"/>-->

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="#000000"
+        android:id="@+id/walkParent"
+    android:layout_height="fill_parent">
+
+   
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:paddingBottom="10dp"
+         android:paddingTop="10dp"
+        android:src="@drawable/bulb_unlit" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/walkthroughPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/imageView2">
+    </android.support.v4.view.ViewPager>
+
+    <!--  This TextView will not swipe when you swipe in the ViewPager -->
+
+		
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                 android:paddingTop="10dp"
+        
+      	android:layout_toLeftOf="@id/imageView2"
+      	android:layout_alignTop="@id/imageView2"
+        android:src="@drawable/bulb_lit" />
+
+    
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                 android:paddingTop="10dp"
+        
+      	android:layout_alignTop="@id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:src="@drawable/bulb_unlit" />
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/rel">
+        		<TextView android:id="@+id/urset"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:textSize="40sp"
+        		    android:textColor="#ED9A00"
+        		    android:textStyle="bold"
+        		    android:text="You are all set." />
+        		
+        			<View android:layout_width="match_parent"
+        			    android:layout_height="50dp" />
+        			<TextView android:id="@+id/plzlogin"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:textSize="20sp"
+        		    android:layout_gravity="center"
+        		    android:gravity="center"
+        		    android:textColor="#ED9A00"
+        		    android:textStyle="bold"
+        		    android:text="Log in with facebook to personalize your TV viewing experience" />
+        			<View android:layout_width="match_parent"
+        			    android:layout_height="20dp" />
+			    <com.facebook.widget.LoginButton
+			        android:id="@+id/authButton"
+			        android:layout_gravity="center"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" />
+			    
+			    <View android:layout_width="match_parent"
+			        android:layout_height="10dp"/>
+			    <Button
+			        android:id="@+id/button1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:background="@drawable/ninebuttons"
+			        android:onClick="skip"
+			        android:layout_gravity="center"
+			        android:gravity="center"
+			        android:textSize="15sp"
+			        android:textColor="#FFFFFF"
+			        android:text="Skip"/>
+    </LinearLayout>
+  
+    
+</RelativeLayout>

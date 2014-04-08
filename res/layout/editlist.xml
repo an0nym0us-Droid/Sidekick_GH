@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@android:color/darker_gray"
+	>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/dncback"
+    android:weightSum="2"
+     >
+    <Button
+        android:id="@+id/buttondone"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="DONE"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:onClick="done" 
+        android:background="@drawable/buttpressed"/>
+
+    
+
+    <View
+     android:id="@+id/header_vertical_divider_1"
+	 android:layout_width="1dp"
+		android:layout_height="20dp"
+		                android:background="@drawable/engraved_bg"
+		                android:layout_gravity="center_vertical" />
+    <Button
+        android:id="@+id/buttoncancel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="CANCEL"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:onClick="cancel" 
+        android:background="@drawable/buttpressed"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/addCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "+ Add new List"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttpressed"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:onClick="addNewList" />
+
+    <com.example.sidekick_offline_try2.TouchInterceptor
+       			android:id="@android:id/list"
+      			android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:drawSelectorOnTop="false"
+        		android:fastScrollEnabled="false" />
+
+</LinearLayout>

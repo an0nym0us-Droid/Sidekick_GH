@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+    
+    <item android:id="@+id/action_editname"
+          android:icon="@drawable/ic_action_edit"
+          android:title="Edit Category Name"
+          android:showAsAction="ifRoom"/>
+     
+    <item android:id="@+id/action_deletecat"
+          android:icon="@drawable/ic_action_discard"
+          android:title="Delete Category"
+          android:showAsAction="ifRoom" />
+
+</menu>

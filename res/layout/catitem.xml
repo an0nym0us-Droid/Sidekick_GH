@@ -1,0 +1,11 @@
+
+		<TextView  
+		    android:id="@+id/catname"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="fill_parent"
+            android:padding="8dp"
+            android:text="HI"
+            android:gravity="center_vertical"
+           xmlns:android="http://schemas.android.com/apk/res/android"/>

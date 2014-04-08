@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="SetupCheckBoxTheme" parent="Theme.Sherlock.NoActionBar">
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/checkboxtheme_btn_check_holo_dark</item>
+    <item name="android:spinnerStyle">@style/SpinnerMainActivitySpinner</item>
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemMainActivitySpinner</item>
+
+  </style>
+  <style name="CheckBoxTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+    <item name="android:checkboxStyle">@style/CheckBoxCheckBoxTheme</item>
+  </style>
+   <style name="WalkthruTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+    <item name="android:checkboxStyle">@style/CheckBoxCheckBoxTheme</item>
+    <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+  </style>
+
+</resources>

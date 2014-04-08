@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dip"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:background="#353535">
+
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/divider_horizontal_dark" /> 
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:gravity="center_vertical"
+        >
+
+       
+<!-- left icon, used for the grabber -->
+        <ImageView android:id="@+id/grabber"
+            android:src="@drawable/ic_grabber"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+
+        <!-- The height is set to half the height of the parent, which is 48 dip -->
+		<ImageButton
+            android:id="@+id/chanEdi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/chanedit"
+            android:background="#353535"
+            />
+       
+
+        <ToggleButton
+            android:id="@+id/togVisible"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/chanEdi"
+            android:checked="true"
+            android:onClick="onToggled"
+            android:textOff="Hide"
+            android:textOn="Show" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dip"
+        android:paddingRight="7dip"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

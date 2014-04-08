@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+ 
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilebuildup"
+        android:visibility="visible"
+        android:orientation="vertical">
+        
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                 <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="5dp"
+		        android:paddingTop="3dp"
+		        android:text="Profile build up: "/>
+                <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/profilePerc"
+		        android:text="hello"/>
+            </LinearLayout>
+		    
+		     
+		     <ProgressBar
+		        android:id="@+id/profilePercBar"
+		        android:layout_width="match_parent"
+		        android:padding="5dp"
+		        style="@style/CustomProfileProgressBar"
+		        android:layout_height="wrap_content" />
+		     
+		     <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:paddingLeft="5dp"
+		         android:text="To improve your recommendation,"/>
+		     <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:paddingLeft="9dp"
+		         android:text="1. Tune-in to shows you watched."/>
+		     
+		         <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:paddingLeft="9dp"
+		         android:text="2. Add your favourite shows to watchlist."/>
+		         
+		         <TextView android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:text="Hide"
+		             android:id="@+id/hideButton"
+		             android:clickable="true"
+		             android:textColor="#ED9A00"
+		             android:layout_gravity="center_horizontal"
+		             android:textSize="20sp"
+		             android:padding="10dp"
+		             android:background="@drawable/back"
+		             android:onClick="hideProfile"/>
+		         
+		     
+		     
+		     <View android:layout_width="match_parent"
+		         android:layout_height="2dp"
+		         android:background="#000000"
+		         android:paddingBottom="4dp"/>
+   </LinearLayout>
+	
+    <FrameLayout android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <ListView
+        android:id="@+id/recolv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:cacheColorHint="#00000000"
+        android:divider="#f0b547"
+        android:dividerHeight="3dp" >
+        </ListView>
+        
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/noRecom"
+            android:visibility="gone"
+            android:text="No recommendations."
+            android:layout_gravity="center"/>
+    
+    </FrameLayout>
+    
+    
+</LinearLayout>

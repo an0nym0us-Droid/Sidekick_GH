@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="2dp"
+    android:layout_height="80dp">
+ 
+  
+    <TextView android:id="@+id/addonName"
+        android:layout_width="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_height="match_parent"
+        android:text="Addon Here"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:textStyle="italic"
+  		android:textColor="#A0F7D393"
+        />
+    
+    <CheckBox android:id="@+id/addonCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:focusable="false" />
+    
+<!--    	<FrameLayout android:layout_height="wrap_content" -->
+<!--    	    android:layout_width="wrap_content">  -->
+   	    
+<!--    	    <RelativeLayout  -->
+<!--    	        android:layout_height="60dp" -->
+<!--    	        android:layout_width="60dp" -->
+   	        
+<!--    	        > -->
+<!--     <ImageView -->
+<!--         android:id="@+id/grid_item_image" -->
+<!--         android:layout_width="50dp" -->
+<!--         android:layout_height="50dp" -->
+        
+<!--          > -->
+<!--     </ImageView> -->
+<!--       </RelativeLayout> -->
+<!--     <LinearLayout android:layout_width="wrap_content" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:orientation="vertical" -->
+<!--    > -->
+<!--     <CheckBox -->
+<!--             android:id="@+id/chanvis" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:paddingLeft="20dp" -->
+<!--             android:background="@null" -->
+<!--             android:clickable="false" -->
+<!--             android:focusable="false" -->
+<!--             android:focusableInTouchMode="false" /> -->
+    
+    
+
+      
+<!--     <TextView -->
+<!--         android:id="@+id/grid_item_label" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:text="@+id/label" -->
+<!--         android:layout_marginTop="10dp" -->
+<!--         android:textColor="@android:color/white" -->
+<!--         android:textSize="10sp" /> -->
+<!-- </LinearLayout> -->
+
+<!--  	</FrameLayout> -->
+    
+ 
+</RelativeLayout>
